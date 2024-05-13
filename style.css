@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    /* background-color: #000; */
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline{
+    width: 1200px;
+    /* background-color: steelblue; */
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+    position: relative;
+
+    z-index: -1;
+
+}
+
+
+.progress{
+    width: 1000px;
+    height: 40px;
+    background-color: #f4f4f4;
+    border-radius: 40px;
+
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translateX(-50%);
+
+    z-index: -1;
+}
+
+
+.progressbar{
+    width: 0%;
+    height: 100%;
+    background-color: green;
+}
+
+
+
+.iconbox{
+    width: 200px;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    /* border:1px solid rgba(0,0,0,0.5); */
+    margin: 0 10px;
+    color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+    transition: all 3s;
+
+}
+
+.iconbox h3{
+    margin:0;
+    padding-top: 10px;
+
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border:5px solid #f4f4f4;
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 50px;
+
+    transition: all 3s;
+
+}
+
+
+
+.active{
+    color: green;
+    
+}
+
+.active .icon{
+    border:5px solid green;
+
+}
+
+
+
+
+
+.iconbox:nth-of-type(3){
+    transition-delay: 2s;
+}
+
+
+.iconbox:nth-of-type(4){
+    transition-delay: 2.5s;
+}
+
+
+.iconbox:nth-of-type(5){
+    transition-delay: 3s;
+}
+
+
+.iconbox:nth-of-type(6){
+    transition-delay: 3.5s;
+}
+
+.iconbox:nth-of-type(7){
+    transition-delay: 4s;
+}
+
+
+
+
+
+
+.iconbox.flagitem{
+    position:absolute;
+    left:0;
+}
+
+
+
+
+.btn{
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 40px;
+    border:none;
+    cursor: pointer;
+    border-radius: 3px;
+
+    position: absolute;
+    bottom: 20%;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
